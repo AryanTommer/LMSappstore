@@ -1,6 +1,6 @@
 module.exports = function (config) {
     config.set({
-        basePath: 'nextcloudappstore/core/static/',
+        basePath: 'TechKiteLMSappstore/core/static/',
         frameworks: ['jasmine'],
         mime: { 'text/x-typescript': ['ts','tsx'] },
         files: [

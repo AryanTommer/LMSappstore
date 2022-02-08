@@ -1,7 +1,7 @@
 {
-    "name": "nextcloudappstore",
+    "name": "TechKiteLMSappstore",
     "version": "1.0.0",
-    "description": "Nextcloud App Store",
+    "description": "TechKiteLMS App Store",
     "main": "index.js",
     "directories": {
         "doc": "docs"
@@ -39,21 +39,21 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/nextcloud/appstore.git"
+        "url": "git+https://github.com/TechKiteLMS/appstore.git"
     },
     "keywords": [
         "app",
         "store",
-        "nextcloud",
+        "TechKiteLMS",
         "cloud",
         "django",
         "python"
     ],
-    "author": "Nextcloud Community",
+    "author": "TechKiteLMS Community",
     "license": "AGPL-3.0",
     "bugs": {
-        "url": "https://github.com/nextcloud/appstore/issues"
+        "url": "https://github.com/TechKiteLMS/appstore/issues"
     },
-    "homepage": "https://github.com/nextcloud/appstore#readme",
+    "homepage": "https://github.com/TechKiteLMS/appstore#readme",
     "private": true
 }
