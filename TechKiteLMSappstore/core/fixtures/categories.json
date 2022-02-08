@@ -1,0 +1,308 @@
+[
+    {
+        "model": "core.categorytranslation",
+        "pk": 1,
+        "fields": {
+            "language_code": "en",
+            "name": "Activity",
+            "description": "Activity Apps",
+            "master": "activity"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 2,
+        "fields": {
+            "language_code": "en",
+            "name": "Admin",
+            "description": "Admin Tools",
+            "master": "admin"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 3,
+        "fields": {
+            "language_code": "en",
+            "name": "Assignment",
+            "description": "Assignment Apps",
+            "master": "assignment"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 4,
+        "fields": {
+            "language_code": "en",
+            "name": "Authentication",
+            "description": "Authentication Method Apps",
+            "master": "authentication"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 5,
+        "fields": {
+            "language_code": "en",
+            "name": "Block",
+            "description": "Block Apps",
+            "master": "block"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 6,
+        "fields": {
+            "language_code": "en",
+            "name": "Book",
+            "description": "Book Apps",
+            "master": "book"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 7,
+        "fields": {
+            "language_code": "en",
+            "name": "Course",
+            "description": "Course Format Apps",
+            "master": "course"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 8,
+        "fields": {
+            "language_code": "en",
+            "name": "Editor",
+            "description": "Editor Apps",
+            "master": "editor"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 9,
+        "fields": {
+            "language_code": "en",
+            "name": "Enrolment",
+            "description": "Enrolment Method Apps",
+            "master": "enrolment"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 10,
+        "fields": {
+            "language_code": "en",
+            "name": "Grade",
+            "description": "Grade Export Method Apps",
+            "master": "grade"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 11,
+        "fields": {
+            "language_code": "en",
+            "name": "Gradebook",
+            "description": "Gradebook Report Apps",
+            "master": "gradebook"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 12,
+        "fields": {
+            "language_code": "en",
+            "name": "Notification",
+            "description": "Notification Apps",
+            "master": "notification"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 13,
+        "fields": {
+            "language_code": "en",
+            "name": "Plagiarism",
+            "description": "Plagiarism Apps",
+            "master": "plagiarism"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 14,
+        "fields": {
+            "language_code": "en",
+            "name": "Portfolio",
+            "description": "Portfolio Apps",
+            "master": "portfolio"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 15,
+        "fields": {
+            "language_code": "en",
+            "name": "Question",
+            "description": "Question Apps",
+            "master": "question"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 16,
+        "fields": {
+            "language_code": "en",
+            "name": "Quiz",
+            "description": "Quiz Apps",
+            "master": "quiz"
+        }
+    },
+    {
+        "model": "core.categorytranslation",
+        "pk": 17,
+        "fields": {
+            "language_code": "en",
+            "name": "Other",
+            "description": "Other Apps",
+            "master": "other"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "activity",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "admin",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "assignment",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "authentication",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "block",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "book",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "course",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "editor",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "enrolment",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "grade",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "gradebook",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "notification",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "plagiarism",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "portfolio",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "question",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "quiz",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": "other",
+        "fields": {
+            "created": "2016-07-02T09:54:54.939Z",
+            "last_modified": "2016-07-02T09:54:54.939Z"
+        }
+    }
+]

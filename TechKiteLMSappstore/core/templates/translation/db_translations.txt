@@ -1,0 +1,34 @@
+{% trans "Activity" %}
+{% trans "Activity Apps" %}
+{% trans "Admin" %}
+{% trans "Admin Tools" %}
+{% trans "Assignment" %}
+{% trans "Assignment Apps" %}
+{% trans "Authentication" %}
+{% trans "Authentication Method Apps" %}
+{% trans "Block" %}
+{% trans "Block Apps" %}
+{% trans "Book" %}
+{% trans "Book Apps" %}
+{% trans "Course" %}
+{% trans "Course Format Apps" %}
+{% trans "Editor" %}
+{% trans "Editor Apps" %}
+{% trans "Enrolment" %}
+{% trans "Enrolment Method Apps" %}
+{% trans "Grade" %}
+{% trans "Grade Export Method Apps" %}
+{% trans "Gradebook" %}
+{% trans "Gradebook Report Apps" %}
+{% trans "Notification" %}
+{% trans "Notification Apps" %}
+{% trans "Plagiarism" %}
+{% trans "Plagiarism Apps" %}
+{% trans "Portfolio" %}
+{% trans "Portfolio Apps" %}
+{% trans "Question" %}
+{% trans "Question Apps" %}
+{% trans "Quiz" %}
+{% trans "Quiz Apps" %}
+{% trans "Other" %}
+{% trans "Other Apps" %}

@@ -19,6 +19,6 @@
         ]
     },
     "include": [
-        "nextcloudappstore/core/static/assets/app/**/*"
+      "TechKiteLMSappstore/core/static/assets/app/**/*"
     ]
 }

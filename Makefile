@@ -15,15 +15,15 @@ prod_version=12.0.0
 
 .PHONY: lint
 lint:
-	$(pycodestyle) $(CURDIR)/nextcloudappstore --exclude=migrations,development.py
-	$(mypy) --ignore-missing-imports $(CURDIR)/nextcloudappstore/api/v1/release
-	$(mypy) --ignore-missing-imports $(CURDIR)/nextcloudappstore/certificate
-	$(bandit) -r $(CURDIR)/nextcloudappstore -c $(CURDIR)/.bandit.yml
+	$(pycodestyle) $(CURDIR)/TechKiteLMSappstore --exclude=migrations,development.py
+	$(mypy) --ignore-missing-imports $(CURDIR)/TechKiteLMSappstore/api/v1/release
+	$(mypy) --ignore-missing-imports $(CURDIR)/TechKiteLMSappstore/certificate
+	$(bandit) -r $(CURDIR)/TechKiteLMSappstore -c $(CURDIR)/.bandit.yml
 
 .PHONY: test
 test: lint
 	$(yarn) test
-	$(coverage) run --source=nextcloudappstore $(manage-script) test --settings nextcloudappstore.settings.development -v 2
+	$(coverage) run --source=TechKiteLMSappstore $(manage-script) test --settings TechKiteLMSappstore.settings.development -v 2
 	$(coverage) report --fail-under 90
 
 .PHONY: resetup
@@ -33,8 +33,8 @@ resetup:
 
 .PHONY: initmigrations
 initmigrations:
-	rm -f $(CURDIR)/nextcloudappstore/**/migrations/0*.py
-	$(manage) makemigrations --settings nextcloudappstore.settings.development
+	rm -f $(CURDIR)/TechKiteLMSappstore/**/migrations/0*.py
+	$(manage) makemigrations --settings TechKiteLMSappstore.settings.development
 
 # Only for local setup, do not use in production
 .PHONY: dev-setup
@@ -49,19 +49,19 @@ dev-setup:
 ifeq ($(db), postgres)
 	$(pip) install -r $(CURDIR)/requirements/production.txt
 endif
-	cp $(CURDIR)/scripts/development/settings/base.py $(CURDIR)/nextcloudappstore/settings/development.py
-	cat $(CURDIR)/scripts/development/settings/$(db).py >> $(CURDIR)/nextcloudappstore/settings/development.py
+	cp $(CURDIR)/scripts/development/settings/base.py $(CURDIR)/TechKiteLMSappstore/settings/development.py
+	cat $(CURDIR)/scripts/development/settings/$(db).py >> $(CURDIR)/TechKiteLMSappstore/settings/development.py
 	$(MAKE) initdb
 	$(MAKE) l10n
 
 
 .PHONY: initdb
 initdb:
-	$(manage) migrate --settings nextcloudappstore.settings.development
-	$(manage) loaddata $(CURDIR)/nextcloudappstore/core/fixtures/*.json --settings nextcloudappstore.settings.development
-	$(manage) createsuperuser --username admin --email admin@admin.com --noinput --settings nextcloudappstore.settings.development
-	$(manage) verifyemail --username admin --email admin@admin.com --settings nextcloudappstore.settings.development
-	$(manage) setdefaultadminpassword --settings nextcloudappstore.settings.development
+	$(manage) migrate --settings TechKiteLMSappstore.settings.development
+	$(manage) loaddata $(CURDIR)/TechKiteLMSappstore/core/fixtures/*.json --settings TechKiteLMSappstore.settings.development
+	$(manage) createsuperuser --username admin --email admin@admin.com --noinput --settings TechKiteLMSappstore.settings.development
+	$(manage) verifyemail --username admin --email admin@admin.com --settings TechKiteLMSappstore.settings.development
+	$(manage) setdefaultadminpassword --settings TechKiteLMSappstore.settings.development
 
 .PHONY: docs
 docs:
@@ -79,8 +79,8 @@ authors:
 
 .PHONY: clean
 clean:
-	rm -rf $(CURDIR)/nextcloudappstore/core/static/vendor
-	rm -rf $(CURDIR)/nextcloudappstore/core/static/public
+	rm -rf $(CURDIR)/TechKiteLMSappstore/core/static/vendor
+	rm -rf $(CURDIR)/TechKiteLMSappstore/core/static/public
 	rm -rf $(CURDIR)/node_modules
 	$(MAKE) -C $(CURDIR)/docs/ clean
 
@@ -94,8 +94,8 @@ prod-data:
 
 .PHONY: l10n
 l10n:
-	$(manage) compilemessages --settings nextcloudappstore.settings.development
-	$(manage) importdbtranslations --settings nextcloudappstore.settings.development
+	$(manage) compilemessages --settings TechKiteLMSappstore.settings.development
+	$(manage) importdbtranslations --settings TechKiteLMSappstore.settings.development
 
 .PHONY: coverage
 coverage:
@@ -103,6 +103,6 @@ coverage:
 
 .PHONY: test-user
 test-user:
-	$(manage) createtestuser --username user1 --password user1 --email user1@user.com --settings nextcloudappstore.settings.development
-	$(manage) createtestuser --username user2 --password user2 --email user2@user.com --settings nextcloudappstore.settings.development
-	$(manage) createtestuser --username user3 --password user3 --email user3@user.com --settings nextcloudappstore.settings.development
+	$(manage) createtestuser --username user1 --password user1 --email user1@user.com --settings TechKiteLMSappstore.settings.development
+	$(manage) createtestuser --username user2 --password user2 --email user2@user.com --settings TechKiteLMSappstore.settings.development
+	$(manage) createtestuser --username user3 --password user3 --email user3@user.com --settings TechKiteLMSappstore.settings.development
